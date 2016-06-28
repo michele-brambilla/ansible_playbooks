@@ -1,0 +1,6 @@
+---
+  - name: Install kafka
+    include: install-kafka.yml
+
+#  - name: Run kafka
+#    include: run-kafka.yml

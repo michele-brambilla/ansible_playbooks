@@ -1,0 +1,8 @@
+---
+
+- name: Install OpenJDK
+  shell: echo "installed OpenJDK"
+  
+- name: restart ssh
+  action: service name=ssh state=restarted
+  when: ssh_service_state != 'stopped'
