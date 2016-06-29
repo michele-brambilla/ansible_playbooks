@@ -1,6 +1,8 @@
 ---
   - name: Install kafka
     include: install-kafka.yml
+    when: {{  }}
 
-#  - name: Run kafka
-#    include: run-kafka.yml
+  - name: Run kafka
+    include: run-kafka.yml
+    when: {{  }}

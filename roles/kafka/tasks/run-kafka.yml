@@ -1,3 +1,6 @@
 ---
-- name: Run the kafka service
+- name: Run the Kafka service
+  service: name=kafka state=started enabled=yes
+
+- name: Run the Zookeper service
   service: name=kafka state=started enabled=yes
