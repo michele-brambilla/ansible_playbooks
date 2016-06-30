@@ -37,10 +37,3 @@
 
 - name: Run Gradle to build Kafka
   shell: "./gradlew jar chdir={{ kafka_dir }} creates={{ kafka_dir }}/core/build/"
-
-#- name: Install the Kafka service handler
-#  copy: src=init.d/kafka dest=/etc/init.d/ mode=0755
-#
-#- name: Install the Zookeper service handler
-#  copy: src=init.d/zookeeper dest=/etc/init.d/ mode=0755
-  
